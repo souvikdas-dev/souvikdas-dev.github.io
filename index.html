@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="import" href="component.html" />
+    <title>Souvik Das</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/extend.css" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- main body -->
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-md mb-4 border-bottom" id="nav">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-3" href="/" style="color: rgb(70, 169, 227)">&lt;<span
+                            style="font-family: 'WindSong', cursive">Souvik Das </span>/&gt;
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation" style="box-shadow: none; color: inherit">
+                        <span class="bx bx-sm bx-code-alt"></span>
+                    </button>
+                    <div class="
+                collapse
+                navbar-collapse
+                justify-content-end
+                align-items-center
+              " id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#achievements">Achievements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <i class="bx bx-md bx-toggle-right" id="changeMode" style="
+                      display: inline-block;
+                      vertical-align: middle;
+                      padding: 2px;
+                    "></i>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- profile section -->
+        <div class="container-sm d-flex flex-md-row flex-column align-items-center">
+            <div class="d-inline-block p-sm-4 mx-auto col-md-8">
+                <h1>Hi there, I'm Souvik <i class="bx bx-tada">🖐🏽</i></h1>
+                <p class="fs-5 ps-4 mb-1" id="protext">
+                    A passionate Full Stack Web Developer 🚀 having an experience of
+                    building Web and Mobile applications with JavaScript / Reactjs /
+                    Nodejs / React Native and some other cool libraries and frameworks.
+                </p>
+            </div>
+            <div class="
+            d-md-inline-block
+            mx-auto
+            my-4
+            col-lg-3 col-md-4 col-sm-8 col-10
+          ">
+                <img src=" img/Untitled.png" alt="" id="profileimg" class="d-block mx-auto p-3" width="300px"
+                    height="300px" style="width: 100%; height: auto" />
+                <!-- <img src=" img/Untitled.png" alt="" width="350px" height="350px" class="d-inline-block mx-auto" /> -->
+                <span class="d-block text-center w-75 mx-auto" style="font-weight: 500">
+                    Web Developer || Programmer Gamer || Student
+                </span>
+            </div>
+        </div>
+
+        <br />
+        <!-- About me -->
+        <div class="container mb-5">
+            <span class="d-inline-block fs-5 px-3 py-1"
+                style="font-weight: 600; color: #005; background-color: #ffc600">aboutMe.js</span>
+            <!-- <code>
+                     <pre>
+                const Souvik = {
+                    pronouns: "he" | "him",
+                    code: [Javascript, HTML, CSS, C, C++, C#, python],
+                    askMeAbout: ["web dev", "tech", "Programming", "music", "coffee"],
+                    technologies: {
+                        frontEnd: {
+                            css: ["bootstrap", "SASS"]
+                        },
+                        backEnd: {
+                            js: ["vue", "node"]
+                        }
+                    }
+                };        
+            </pre
+                  >
+                  </code> -->
+
+            <pre class="code-bg"><span class="pl-k">const</span> <span class="pl-v">Souvik</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+            <span class="pl-c1">pronouns</span>: <span class="pl-s">"he"</span> <span class="pl-c1">|</span> <span class="pl-s">"him"</span><span class="pl-kos">,</span>
+            <span class="pl-c1">code</span>: <span class="pl-kos">[</span><span class="pl-v">Javascript</span><span class="pl-kos">,</span> <span class="pl-v">HTML</span><span class="pl-kos">,</span> <span class="pl-v">CSS</span><span class="pl-kos">,</span> <span class="pl-v">C</span><span class="pl-kos">,</span> <span class="pl-v">C</span><span class="pl-c1">++</span><span class="pl-kos">,</span> <span class="pl-v">C</span><span class="pl-c1">#</span><span class="pl-kos">,</span> <span class="pl-v">python</span><span class="pl-kos">]</span><span class="pl-kos">,</span>
+            <span class="pl-c1">askMeAbout</span>: <span class="pl-kos">[</span><span class="pl-s">"web dev"</span><span class="pl-kos">,</span> <span class="pl-s">"tech"</span><span class="pl-kos">,</span> <span class="pl-s">"Programming"</span><span class="pl-kos">,</span> <span class="pl-s">"music"</span><span class="pl-kos">,</span> <span class="pl-s">"coffee"</span><span class="pl-kos">]</span><span class="pl-kos">,</span>
+            <span class="pl-c1">technologies</span>: <span class="pl-kos">{</span>
+                <span class="pl-c1">frontEnd</span>: <span class="pl-kos">{</span>
+                    <span class="pl-c1">css</span>: <span class="pl-kos">[</span><span class="pl-s">"bootstrap"</span><span class="pl-kos">,</span> <span class="pl-s">"SASS"</span><span class="pl-kos">]</span>
+                <span class="pl-kos">}</span><span class="pl-kos">,</span>
+                <span class="pl-c1">backEnd</span>: <span class="pl-kos">{</span>
+                    <span class="pl-c1">js</span>: <span class="pl-kos">[</span><span class="pl-s">"vue"</span><span class="pl-kos">,</span> <span class="pl-s">"node"</span><span class="pl-kos">]</span>
+                <span class="pl-kos">}</span>
+            <span class="pl-kos">}</span>
+        <span class="pl-kos">}</span><span class="pl-kos">;</span></pre>
+        </div>
+
+        <!-- Skills section -->
+        <div id="skills" class="container mb-5">
+            <!-- <h2>Skills</h2> -->
+            <span class="d-inline-block fs-4 px-3 py-1 text-capitalize font-monospace"
+                style="font-weight: 600; color: #003; background-color: #ffc600">Skills</span>
+            <!-- <span class="d-inline-block fs-4 px-3 py-1" style="font-weight: 700; color: #005; background-color: #ffc600;">Skills</span> -->
+            <!-- <hr class="mt-0"/> -->
+            <hr class="mt-1" />
+            <h6 class="mb-4">
+                CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+            </h6>
+
+            <div class="
+            lang
+            d-flex
+            flex-wrap
+            justify-content-evenly
+            align-items-center
+          ">
+                <i class="bx bx-lg bxl-html5"><span>html5</span></i>
+                <i class="bx bx-lg bxl-css3"><span>css3</span></i>
+                <i class="bx bx-lg bxl-javascript"><span>javascript</span></i>
+                <i class="bx bx-lg bxl-python"><span>python</span></i>
+                <i class="bx bx-lg bxl-php"><span>php</span></i>
+                <i class="bx bx-lg bxl-jquery"><span>jquery</span></i>
+                <i class="bx bx-lg bxl-github"><span>github</span></i>
+                <i class="bx bx-lg bxl-git"><span>git</span></i>
+                <i class="bx bx-lg bxl-nodejs"><span>nodejs</span></i>
+                <i class="bx bx-lg bxl-bootstrap"><span>bootstrap</span></i>
+                <i class="bx bx-lg bxl-c-plus-plus"><span>C++</span></i>
+                <i class="bx bx-lg bxl-visual-studio"><span>VScode</span></i>
+            </div>
+            <hr />
+        </div>
+
+        <!-- Proficiency section -->
+        <div class="Proficiency container mb-5">
+            <span class="d-inline-block fs-4 px-3 py-1" style="
+            font-weight: 600;
+            color: #005;
+            background-color: #ffc600;
+            /* border-top-left-radius: 17px; */
+            /* border-bottom-right-radius: 17px; */
+          ">Proficiency</span>
+            <!-- <div style="background-color: #ffc600; height: 2px; width: 100%"></div> -->
+            <!-- <hr class="mt-1"> -->
+            <div class="container">
+                <div class="my-5">
+                    <h5 class="mb-3">Frontend/Design</h5>
+                    <div class="progress" style="height: 17px; border-radius: 15px; background-color: #d5d4e9">
+                        <div class="progress-bar" role="progressbar"
+                            style="width: 85%; border-radius: 5px; background-color: #aaa5ff" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h5 class="mb-3">Backend</h5>
+                    <div class="progress"
+                        style="height: 17px; border-radius: 15px; background-color: rgb(231, 210, 217)">
+                        <div class="progress-bar" role="progressbar"
+                            style="width: 65%; border-radius: 5px; background-color: rgb(240, 140, 173); "
+                            aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h5 class="mb-3">Programming</h5>
+                    <div class="progress" style="height: 17px; border-radius: 15px; background-color: #e0d9bc">
+                        <div class="progress-bar" role="progressbar"
+                            style="width: 73%; border-radius: 5px; background-color: #ecd069" aria-valuenow="73"
+                            aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- Projects section -->
+        <!-- <div id="projects" class="container">
+        <h2>Projects</h2>
+        <hr>
+
+        <div class="item bod">
+            <img src="https://souvikdas-git.github.io/ColorPicker/cplogo.png" alt="" class="img-thumbnail bod"
+                width="300px" height="auto">
+            <span> ColorPicker </span>
+            <a href="https://github.com/SouvikDas-git" target="_blank" class="bx bx-md bxl-github"></a>
+        </div>
+        <div class="item bod">
+            <img src="https://souvikdas-git.github.io/fancy-border-radius-generator/fancy-logo.png" alt=""
+                class="img-thumbnail bod" width="300px" height="auto">
+            <span> fancy-border-radius-generator </span>
+            <a href="https://souvikdas-git.github.io/fancy-border-radius-generator/" target="_blank"
+                class="bx bx-md bxl-github"></a>
+        </div>
+        <div class="item bod">
+            <img src="https://souvikdas-git.github.io/AssignmentMaker/favicon_io/android-chrome-512x512.png" alt=""
+                class="img-thumbnail bod" width="300px" height="auto">
+            <span> AssignmentMaker </span>
+            <a href="https://souvikdas-git.github.io/AssignmentMaker/" target="_blank" class="bx bx-md bxl-github"></a>
+        </div>
+    </div> -->
+
+        <!-- Achievements section -->
+        <div id="achievements" class="container mb-5">
+            <!-- <h2 style="color: #003; background-color: #ffc600;">Achievements</h2> -->
+            <span class="d-inline-block fs-4 px-3 py-1 text-capitalize font-monospace"
+                style="font-weight: 600; color: #003; background-color: #ffc600">Achievements</span>
+            <hr class="mt-1" />
+            <div class="achieve-body">
+                <div class="itm">
+                    <img src="certificate/cert-1014-13679167.jpg" alt="1" width="550px" height="auto" />
+                </div>
+                <div class="itm">
+                    <img src="certificate/cert-1023-13679167.jpg" alt="2" width="550px" height="auto" />
+                </div>
+                <div class="itm">
+                    <img src="certificate/cert-1162-13679167.jpg" alt="3" width="550px" height="auto" />
+                </div>
+                <div class="itm">
+                    <img src="certificate/cert-1082-13679167.jpg" alt="4" width="550px" height="auto" />
+                </div>
+                <div class="itm">
+                    <img src="certificate/Souvik Das-converted_page-0001.jpg" alt="5" width="550px" height="auto" />
+                </div>
+                <div class="itm">
+                    <img src="certificate/Souvik_Das-converted_page-0001.jpg" alt="6" width="550px" height="auto" />
+                </div>
+                <div class="itm">
+                    <img src="certificate/cert-13679167-1157.png" alt="7" width="550px" height="auto" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Me section -->
+        <div id="contact" class="mb-5">
+            <!-- <h2>Contact Me</h2> -->
+            <h3>Reach Out to me!</h3>
+            <h6>
+                DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.
+            </h6>
+            <hr />
+            <div class="mb-3">
+                <i class="bx bx-map bx-sm" style="vertical-align: middle"></i>
+                <span class="d-inline-block fs-5 fw-light text-capitalize mb-4">
+                    west bengal, India
+                </span>
+                <p class="mb-4 fs-5">Open for opportunities: Yes</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/SouvikDas-git" target="_blank" class="bx bx-md bxl-github"></a>
+                <a href="#" target="_blank" class="bx bx-md bxl-linkedin" style="color: #0e76a8"></a>
+                <a href="#" target="_blank" class="bx bx-md bxl-stack-overflow" style="color: #ef8236"></a>
+                <a href="#" target="_blank" class="bx bx-md bxl-facebook"
+                    style="color: #fff; background-color: #3b5998">
+                </a>
+                <a href="#" target="_blank" class="bx bx-md bxl-discord-alt"
+                    style="background-color: #5865f2; color: #fff; padding: 2px">
+                </a>
+            </div>
+        </div>
+
+        <!-- <br />
+            <button onclick="move()">Click Me</button> -->
+
+        <!-- <script>
+                var i = 0;
+                function move() {
+                    if (i == 0) {
+                        i = 1;
+                        var elem = document.getElementById("myBar");
+                        var width = 10;
+                        var id = setInterval(frame, 10);
+                        function frame() {
+                            if (width >= 70) {
+                                clearInterval(id);
+                                i = 0;
+                            } else {
+                                width++;
+                                elem.style.width = width + "%";
+                                // elem.innerHTML = width + "%";
+                            }
+                        }
+                    }
+                }
+            </script> -->
+
+        <div class="p-5 text-center">
+            <p class="fs-6 text-capitalize">made with ❤ by souvik</p>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class='bx bx-md bx-chevrons-up'></i></button>
+
+    <script>
+        
+    </script>
+    <script src="js/switch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
