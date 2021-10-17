@@ -25,6 +25,15 @@ body {
 }
 .nav-link {
   color: inherit;
+  transition: all 0.4s;
+}
+/* .nav-item:hover .nav-link */
+.nav-link:hover
+{
+  /* color: #ffc600; */
+  color: inherit;
+  font-weight: 600;
+  letter-spacing: 1.3px;
 }
 #changeMode {
   vertical-align: middle;
