@@ -6,7 +6,7 @@ let changeMode = document.getElementById("changeMode");
 changeMode.onclick = () => {
   if (darkmode) {
     // document.body.style.cssText = "background: #FFF;color: #000;";
-    document.body.style.cssText = "background: #eee;color: #111;";
+    document.body.style.cssText = "background: #fafafa;color: #111;";
     changeMode.classList.replace("bx-toggle-right", "bx-toggle-left");
     changeMode.style.color = "rgb(0, 225, 225)";
     darkmode = false;
@@ -26,7 +26,7 @@ if (darkmode) {
   changeMode.style.color = "rgba(252, 70, 107, 1)";
   // darkmode = true;
 } else {
-  document.body.style.cssText = "background: #eee;color: #111;";
+  document.body.style.cssText = "background: #fafafa;color: #111;";
   changeMode.classList.replace("bx-toggle-right", "bx-toggle-left");
   changeMode.style.color = "rgb(0, 225, 225)";
   // darkmode = false;

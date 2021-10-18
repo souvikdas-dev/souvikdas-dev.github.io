@@ -20,6 +20,8 @@
         @import url("https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
     </style>
+    <script src="js/index.js"></script>
+
 </head>
 
 <body>
@@ -212,15 +214,24 @@
                     </div>
                 </div>
             </div>
-            <hr />
+            <!-- <hr /> -->
         </div>
-        
-        <!-- Projects section -->
-        <!-- <div id="projects" class="container">
-        <h2>Projects</h2>
-        <hr>
 
-        <div class="item bod">
+        <!-- Projects section -->
+        <div id="projects" class="container">
+            <h2>Projects</h2>
+            <!-- <span class="d-inline-block fs-4 px-3 py-1"
+                style="font-weight: 600; color: #005; background-color: #ffc600">Projects</span> -->
+            <hr class="mb-4">
+            <div id="projects-body" class="d-flex justify-content-evenly flex-wrap"></div>
+            <script>
+                requestUserRepos("https://api.github.com/repos/SouvikDas-git/AssignmentMaker");
+                requestUserRepos("https://api.github.com/repos/SouvikDas-git/fancy-border-radius-generator");
+                requestUserRepos("https://api.github.com/repos/SouvikDas-git/ColorPicker");
+                requestUserRepos("https://api.github.com/repos/SouvikDas-git/SnakeGame");
+                requestUserRepos("https://api.github.com/repos/SouvikDas-git/SouvikDas-git");
+            </script>
+            <!-- <div class="item bod">
             <img src="https://souvikdas-git.github.io/ColorPicker/cplogo.png" alt="" class="img-thumbnail bod"
                 width="150px" height="auto">
             <span> ColorPicker </span>
@@ -238,14 +249,14 @@
                 class="img-thumbnail bod" width="150px" height="auto">
             <span> AssignmentMaker </span>
             <a href="https://souvikdas-git.github.io/AssignmentMaker/" target="_blank" class="bx bx-md bxl-github"></a>
+        </div> -->
         </div>
-    </div> -->
 
         <!-- Achievements section -->
         <div id="achievements" class="container mb-5">
-            <span class="d-inline-block fs-4 px-3 py-1"
+            <span class="d-inline-block fs-4 px-3 py-1 mb-4"
                 style="font-weight: 600; color: #003; background-color: #ffc600">Achievements</span>
-            <hr class="mt-1" />
+            <!-- <hr class="mt-1" /> -->
             <div class="achieve-body">
                 <div class="itm">
                     <img src="certificate/cert-1014-13679167.jpg" alt="1" width="550px" height="auto" />
@@ -287,9 +298,12 @@
             </div>
 
             <div class="social-links">
-                <a href="https://github.com/SouvikDas-git" target="_blank" rel="noopener noreferrer" class="bx bx-md bxl-github"></a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="bx bx-md bxl-linkedin" style="color: #0e76a8"></a>
-                <a href="#" target="_blank" rel="noopener noreferrer" class="bx bx-md bxl-stack-overflow" style="color: #ef8236"></a>
+                <a href="https://github.com/SouvikDas-git" target="_blank" rel="noopener noreferrer"
+                    class="bx bx-md bxl-github"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bx bx-md bxl-linkedin"
+                    style="color: #0e76a8"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="bx bx-md bxl-stack-overflow"
+                    style="color: #ef8236"></a>
                 <a href="#" target="_blank" rel="noopener noreferrer" class="bx bx-md bxl-facebook"
                     style="color: #fff; background-color: #3b5998">
                 </a>
@@ -309,6 +323,7 @@
     </button>
 
     <script src="js/switch.js"></script>
+    <!-- <script src="js/index.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
