@@ -30,7 +30,7 @@ html {
   /* color: #ffc600; */
   color: inherit;
   font-weight: 600;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.9px;
 }
 #changeMode {
   vertical-align: middle;
@@ -46,15 +46,16 @@ html {
 } */
 
 .lang {
-  margin-left: 15px;
+  /* margin-left: 15px; */
 }
 .lang i {
   display: inline-block;
   color: #777;
   text-align: center;
   /* padding: 0px 3px; */
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin: 0 7px 15px 7px;
+  /* margin-bottom: 15px; */
+  user-select: none;
 }
 .lang i:hover {
   transition: all 0.3s;
@@ -63,21 +64,19 @@ html {
 }
 .lang i span {
   display: block;
-  font-size: 20px;
+  font-size: 1rem;
+  padding-top: 3px;
+  font-family: 'Ubuntu', sans-serif;
 }
-/* #projects {
-} */
-#projects .item {
-  display: inline-block;
+.Proficiency
+{
+  font-family: 'Ubuntu', sans-serif;
+
+
 }
-#projects .item img {
-  display: block;
-  background-color: transparent;
-}
-#projects .item a {
-  color: inherit;
-  text-decoration: none;
-  display: inline-block;
+#projects
+{
+  font-family: 'Ubuntu', sans-serif;
 }
 #achievements .achieve-body {
   display: flex;
@@ -159,4 +158,9 @@ html {
   text-align: center;
   /* line-height: 25px; */
   color: white;
+}
+
+#contact
+{
+  font-family: 'Ubuntu', sans-serif;
 }

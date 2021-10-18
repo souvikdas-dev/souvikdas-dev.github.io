@@ -5,7 +5,7 @@ function requestUserRepos(url) {
   // GitHub endpoint, dynamically passing in specified username
   // const url = `https://api.github.com/users/${username}/repos/AssignmentMaker`;
   //   const url = `https://api.github.com/repos/SouvikDas-git/AssignmentMaker`;
-  console.log(url);
+  //   console.log(url);
   // Open a new connection, using a GET request via URL endpoint
   // Providing 3 arguments (GET/POST, The URL, Async True/False)
   xhr.open("GET", url, true);
@@ -17,7 +17,7 @@ function requestUserRepos(url) {
     const data = JSON.parse(this.response);
     // const data = this.response;
 
-    console.log(data);
+    // console.log(data);
     // Get the div with id of of userRepos
     let projects = document.getElementById("projects-body");
 
@@ -26,7 +26,7 @@ function requestUserRepos(url) {
     // div.style.cssText = "max-width: 480px;";
     div.setAttribute(
       "class",
-      "d-inline-block shadow p-3 mb-5 me-3 text-dark bg-body rounded"
+      "d-inline-block shadow p-3 mb-5 mx-3 text-dark bg-body rounded"
     );
     // div.classList.add(`d-inline-block shadow p-3 mb-5 text-dark bg-body rounded`);
 
@@ -41,12 +41,16 @@ function requestUserRepos(url) {
         </p>
         <div>
             <i class="bx bx-link" style="vertical-align: middle"></i>
-            <a href="${data.html_url}" target="_blank" rel="noopener noreferrer">${data.html_url}</a>
+            <a href="${
+              data.html_url
+            }" target="_blank" rel="noopener noreferrer">${data.html_url}</a>
         </div>
 
         <div class="p-2">
             <div class="d-inline-block me-3">
-                <i class="bx bxs-circle" style="vertical-align: middle; color: #fc0"></i>
+                <i class="bx bxs-circle" style="vertical-align: middle; color: ${eval(
+                  "colorCode." + data.language + ".color"
+                )}"></i>
                 <span style="vertical-align: middle">${data.language}</span>
             </div>
             <div class="d-inline-block me-3">
@@ -55,7 +59,9 @@ function requestUserRepos(url) {
             </div>
             <div class="d-inline-block me-3">
                 <i class="bx bx-star" style="vertical-align: middle"></i>
-                <span style="vertical-align: middle">${data.stargazers_count}</span>
+                <span style="vertical-align: middle">${
+                  data.stargazers_count
+                }</span>
             </div>
             <div class="d-sm-inline-block float-end">
                 <span style="vertical-align: middle">${data.size}&nbsp;KB</span>
