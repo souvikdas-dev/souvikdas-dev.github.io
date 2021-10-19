@@ -23,20 +23,20 @@ function requestUserRepos(url) {
 
     // Create variable that will create li's to be added to ul
     let div = document.createElement("div");
-    // div.style.cssText = "max-width: 480px;";
+    div.style.cssText = "max-width: 537px;";
     div.setAttribute(
       "class",
-      "d-inline-block shadow p-3 mb-5 mx-3 text-dark bg-body rounded"
+      "d-inline-block shadow p-4 mb-5 mx-3 text-dark bg-body rounded"
     );
     // div.classList.add(`d-inline-block shadow p-3 mb-5 text-dark bg-body rounded`);
 
     // Create the html markup for each div
     div.innerHTML = `
-        <div>
-            <i class='bx bx-book-alt'></i>
-            <span class="fs-5" style="font-weight: 600;"> ${data.name} </span>
+        <div class="fs-4" style="font-weight: 600;">
+            <i class='bx bx-book-alt' style="vertical-align: middle;"></i>
+            <span style="vertical-align: middle;"> ${data.name} </span>
         </div>
-        <p id="repoDes" class="pt-2">
+        <p id="repoDes" class="my-3" style="color: #777; font-size:1.2rem;">
             ${data.description}
         </p>
         <div>
@@ -46,7 +46,7 @@ function requestUserRepos(url) {
             }" target="_blank" rel="noopener noreferrer">${data.html_url}</a>
         </div>
 
-        <div class="p-2">
+        <div class="my-2">
             <div class="d-inline-block me-3">
                 <i class="bx bxs-circle" style="vertical-align: middle; color: ${eval(
                   "colorCode." + data.language + ".color"
@@ -55,16 +55,16 @@ function requestUserRepos(url) {
             </div>
             <div class="d-inline-block me-3">
                 <i class="bx bx-git-repo-forked" style="vertical-align: middle"></i>
-                <span style="vertical-align: middle">${data.forks}</span>
+                <span style="vertical-align: middle;">${data.forks}</span>
             </div>
             <div class="d-inline-block me-3">
                 <i class="bx bx-star" style="vertical-align: middle"></i>
-                <span style="vertical-align: middle">${
+                <span style="vertical-align: middle;">${
                   data.stargazers_count
                 }</span>
             </div>
             <div class="d-sm-inline-block float-end">
-                <span style="vertical-align: middle">${data.size}&nbsp;KB</span>
+                <span style="vertical-align: middle; color: #999; font-size:0.8rem; letter-spacing:-0.9px;">${data.size} KB</span>
             </div>
         </div>
     `;

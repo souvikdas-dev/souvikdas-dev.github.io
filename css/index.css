@@ -45,9 +45,9 @@ html {
   box-shadow: 0 0 1.5rem 1.5rem #ffc600;
 } */
 
-.lang {
-  /* margin-left: 15px; */
-}
+/* .lang {
+  margin-left: 15px;
+} */
 .lang i {
   display: inline-block;
   color: #777;
@@ -68,12 +68,12 @@ html {
   padding-top: 3px;
   font-family: 'Ubuntu', sans-serif;
 }
-.Proficiency
+/* .Proficiency
 {
   font-family: 'Ubuntu', sans-serif;
 
 
-}
+} */
 #projects
 {
   font-family: 'Ubuntu', sans-serif;
@@ -88,11 +88,11 @@ html {
 #achievements .itm {
   display: inline-block;
   position: relative;
-  padding: 7px;
-  border-radius: 7px;
-  margin-bottom: 38px;
-  background-color: #fff;
-  box-shadow: 0 0.5rem 1rem #888;
+  /* padding: 7px; */
+  /* border-radius: 7px; */
+  /* margin-bottom: 38px; */
+  /* background-color: #fff; */
+  /* box-shadow: 0 0.5rem 1rem #888; */
   /* width: 550px; */
   width: 45%;
 }

@@ -2124,7 +2124,7 @@ const colorCode = JSON.parse(`{
       "url": "https://github.com/trending?l=Zimpl"
     },
     "null": {
-      "color": "#333",
+      "color": "#ddd",
       "url": "https://github.com/trending?l=null"
     }
   }
