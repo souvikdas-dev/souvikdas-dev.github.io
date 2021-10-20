@@ -25,8 +25,7 @@ html {
   transition: all 0.4s;
 }
 /* .nav-item:hover .nav-link */
-.nav-link:hover
-{
+.nav-link:hover {
   /* color: #ffc600; */
   color: inherit;
   font-weight: 600;
@@ -66,7 +65,7 @@ html {
   display: block;
   font-size: 1rem;
   padding-top: 3px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 /* .Proficiency
 {
@@ -74,9 +73,27 @@ html {
 
 
 } */
-#projects
-{
-  font-family: 'Ubuntu', sans-serif;
+#projects {
+  font-family: "Ubuntu", sans-serif;
+}
+#githublink1 {
+  position: absolute;
+  top: 16px;
+  right:16px;
+  padding: 8px;
+  color: black;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+#githublink2 {
+  position: absolute;
+  top: 0px;
+  right:0px;
+  padding: 8px 8px 24px 24px;
+  color: black;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0% 0% 0% 100% / 0% 0% 0% 100%;
+
 }
 #achievements .achieve-body {
   display: flex;
@@ -160,7 +177,6 @@ html {
   color: white;
 }
 
-#contact
-{
-  font-family: 'Ubuntu', sans-serif;
+#contact {
+  font-family: "Ubuntu", sans-serif;
 }

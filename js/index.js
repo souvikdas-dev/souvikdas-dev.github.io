@@ -23,7 +23,8 @@ function requestUserRepos(url) {
 
     // Create variable that will create li's to be added to ul
     let div = document.createElement("div");
-    div.style.cssText = "max-width: 537px;";
+    div.style.cssText =
+      "max-width: 537px; position: relative; overflow: hidden;";
     div.setAttribute(
       "class",
       "d-inline-block shadow p-4 mb-5 mx-3 text-dark bg-body rounded"
@@ -32,6 +33,7 @@ function requestUserRepos(url) {
 
     // Create the html markup for each div
     div.innerHTML = `
+    <i class='bx bx-md bxl-github' id="githublink2"></i>
         <div class="fs-4" style="font-weight: 600;">
             <i class='bx bx-book-alt' style="vertical-align: middle;"></i>
             <span style="vertical-align: middle;"> ${data.name} </span>
@@ -64,7 +66,9 @@ function requestUserRepos(url) {
                 }</span>
             </div>
             <div class="d-sm-inline-block float-end">
-                <span style="vertical-align: middle; color: #999; font-size:0.8rem; letter-spacing:-0.9px;">${data.size} KB</span>
+                <span style="vertical-align: middle; color: #999; font-size:0.8rem; letter-spacing:-0.9px;">${
+                  data.size
+                } KB</span>
             </div>
         </div>
     `;
