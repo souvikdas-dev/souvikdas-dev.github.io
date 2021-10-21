@@ -1,3 +1,18 @@
+let colorCode;
+
+function reqListener () {
+  // console.log(this.responseText);
+  colorCode = JSON.parse(this.response);
+  // console.log(JSON.parse(this.response));
+  // console.log(JSON.parse(this.responseText));
+}
+
+var oReq = new XMLHttpRequest();
+oReq.addEventListener("load", reqListener);
+oReq.open("GET", "colors.json");
+oReq.send();
+
+
 function requestUserRepos(url) {
   // Create new XMLHttpRequest object
   const xhr = new XMLHttpRequest();
@@ -9,7 +24,6 @@ function requestUserRepos(url) {
   // Open a new connection, using a GET request via URL endpoint
   // Providing 3 arguments (GET/POST, The URL, Async True/False)
   xhr.open("GET", url, true);
-
   // When request is received
   // Process it here
   xhr.onload = function () {
