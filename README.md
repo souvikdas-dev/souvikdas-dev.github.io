@@ -1,2 +1,0 @@
-# SouvikDas
-my resume
