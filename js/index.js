@@ -47,14 +47,14 @@ function requestUserRepos(url) {
     div.innerHTML = `
     <a href="${
       data.html_url
-    }" target="_blank" rel="noopener noreferrer" title="Open in GitHub" class='bx bx-md bxl-github' id="githublink2"></a>
+    }" target="_blank" rel="noopener noreferrer" title="Open in GitHub" class='bx bx-md bxl-github githublink2'></a>
         <div class="fs-4" style="font-weight: 600;">
             <i class='bx bx-book-alt' style="vertical-align: middle;"></i>
             <span style="vertical-align: middle;" title="repository name"> ${
               data.name
             } </span>
         </div>
-        <p id="repoDes" class="my-3" style="color: #777; font-size:1.2rem;" title="Description">
+        <p id="repoDes" class="my-3" style="color: #55595d; font-size:1.2rem;" title="Description">
             ${data.description}
         </p>
         <div>
@@ -84,7 +84,7 @@ function requestUserRepos(url) {
                 }</span>
             </div>
             <div class="d-sm-inline-block float-end">
-                <span style="vertical-align: middle; color: #999; font-size:0.8rem; letter-spacing:-0.9px;">${
+                <span style="vertical-align: middle; color: #585858; font-size:0.8rem; letter-spacing:-0.9px;">${
                   data.size
                 } KB</span>
             </div>
