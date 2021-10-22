@@ -41,7 +41,7 @@ function requestUserRepos(url) {
       "max-width: 537px; position: relative; overflow: hidden;";
     div.setAttribute(
       "class",
-      "d-inline-block shadow p-4 mb-5 mx-3 text-dark bg-body rounded"
+      "d-inline-block shadow p-4 mb-5 mx-sm-2 text-dark bg-body rounded"
     );
 
     // Create the html markup for each div
