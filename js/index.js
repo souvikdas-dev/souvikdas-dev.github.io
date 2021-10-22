@@ -1,6 +1,6 @@
 let colorCode;
 
-function reqListener () {
+function reqListener() {
   // console.log(this.responseText);
   colorCode = JSON.parse(this.response);
   // console.log(JSON.parse(this.response));
@@ -11,7 +11,6 @@ var oReq = new XMLHttpRequest();
 oReq.addEventListener("load", reqListener);
 oReq.open("GET", "colors.json");
 oReq.send();
-
 
 function requestUserRepos(url) {
   // Create new XMLHttpRequest object
@@ -46,10 +45,14 @@ function requestUserRepos(url) {
 
     // Create the html markup for each div
     div.innerHTML = `
-    <a href="${data.html_url}" target="_blank" rel="noopener noreferrer" title="Open in GitHub" class='bx bx-md bxl-github' id="githublink2"></a>
+    <a href="${
+      data.html_url
+    }" target="_blank" rel="noopener noreferrer" title="Open in GitHub" class='bx bx-md bxl-github' id="githublink2"></a>
         <div class="fs-4" style="font-weight: 600;">
             <i class='bx bx-book-alt' style="vertical-align: middle;"></i>
-            <span style="vertical-align: middle;" title="repository name"> ${data.name} </span>
+            <span style="vertical-align: middle;" title="repository name"> ${
+              data.name
+            } </span>
         </div>
         <p id="repoDes" class="my-3" style="color: #777; font-size:1.2rem;" title="Description">
             ${data.description}
@@ -58,7 +61,9 @@ function requestUserRepos(url) {
             <i class="bx bx-link" style="vertical-align: middle"></i>
             <a href="${
               data.homepage
-            }" target="_blank" rel="noopener noreferrer" title="deploy link">${data.homepage}</a>
+            }" target="_blank" rel="noopener noreferrer" title="deploy link">${
+      data.homepage
+    }</a>
         </div>
 
         <div class="my-2">
