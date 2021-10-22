@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Developer portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Souvik Das" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Souvik Das</title>
@@ -19,10 +22,9 @@
     <style>
         @import url("https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
     </style>
     <script src="js/index.js"></script>
-
 </head>
 
 <body>
@@ -223,22 +225,31 @@
             <h2>Projects</h2>
             <!-- <span class="d-inline-block fs-4 px-3 py-1"
                 style="font-weight: 600; color: #005; background-color: #ffc600">Projects</span> -->
-            <hr class="mb-4">
+            <hr class="mb-4" />
             <!-- <h3>Open Source</h3> -->
-            <div id="projects-body" class="d-flex justify-content-evenly flex-wrap">
-            </div>
+            <div id="projects-body" class="d-flex justify-content-evenly flex-wrap"></div>
             <script>
-                requestUserRepos("https://api.github.com/repos/SouvikDas-git/AssignmentMaker");
-                requestUserRepos("https://api.github.com/repos/SouvikDas-git/fancy-border-radius-generator");
-                requestUserRepos("https://api.github.com/repos/SouvikDas-git/ColorPicker");
-                requestUserRepos("https://api.github.com/repos/SouvikDas-git/SnakeGame");
-                requestUserRepos("https://api.github.com/repos/SouvikDas-git/BistroFood.com");
-                // requestUserRepos("https://api.github.com/repos/SouvikDas-git/magnifyapi");
+                requestUserRepos(
+                    "https://api.github.com/repos/SouvikDas-git/AssignmentMaker"
+                );
+                requestUserRepos(
+                    "https://api.github.com/repos/SouvikDas-git/fancy-border-radius-generator"
+                );
+                requestUserRepos(
+                    "https://api.github.com/repos/SouvikDas-git/ColorPicker"
+                );
+                requestUserRepos(
+                    "https://api.github.com/repos/SouvikDas-git/SnakeGame"
+                );
+                requestUserRepos(
+                    "https://api.github.com/repos/SouvikDas-git/BistroFood.com"
+                );
+          // requestUserRepos("https://api.github.com/repos/SouvikDas-git/magnifyapi");
             </script>
 
             <div class="text-center">
                 <a href="https://github.com/SouvikDas-git?tab=repositories" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-primary text-center ">MORE PROJECTS</a>
+                    class="btn btn-primary text-center">MORE PROJECTS</a>
             </div>
             <!-- <div class="item bod">
             <img src="https://souvikdas-git.github.io/ColorPicker/cplogo.png" alt="" class="img-thumbnail bod"
