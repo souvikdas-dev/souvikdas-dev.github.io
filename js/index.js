@@ -1,40 +1,41 @@
 let colorCode;
 
-function reqListener() {
-  // console.log(this.responseText);
-  colorCode = JSON.parse(this.response);
-  // console.log(JSON.parse(this.response));
-  // console.log(JSON.parse(this.responseText));
-}
-
+// Create new XMLHttpRequest object to fetch the colors.json file
 var oReq = new XMLHttpRequest();
-oReq.addEventListener("load", reqListener);
 oReq.open("GET", "colors.json");
+// when xhr is loded/loding
+// the process is here
+oReq.onload = () => {
+  // parse the JSON data into an object
+  colorCode = JSON.parse(oReq.response);
+  requestUserRepos("AssignmentMaker");
+  requestUserRepos("fancy-border-radius-generator");
+  requestUserRepos("ColorPicker");
+  requestUserRepos("SnakeGame");
+  requestUserRepos("BistroFood.com");
+};
+// Send this request to the Server
 oReq.send();
 
-function requestUserRepos(url) {
+function requestUserRepos(RepoName) {
   // Create new XMLHttpRequest object
   const xhr = new XMLHttpRequest();
 
-  // GitHub endpoint, dynamically passing in specified username
-  // const url = `https://api.github.com/users/${username}/repos/AssignmentMaker`;
-  //   const url = `https://api.github.com/repos/SouvikDas-git/AssignmentMaker`;
-  //   console.log(url);
+  // GitHub endpoint, dynamically passing in specified repository name
+  const url = `https://api.github.com/repos/SouvikDas-git/${RepoName}`;
   // Open a new connection, using a GET request via URL endpoint
   // Providing 3 arguments (GET/POST, The URL, Async True/False)
   xhr.open("GET", url, true);
   // When request is received
   // Process it here
-  xhr.onload = function () {
+  xhr.onload = () => {
     // Parse API data into JSON
-    const data = JSON.parse(this.response);
-    // const data = this.response;
+    const data = JSON.parse(xhr.response);
 
-    // console.log(data);
-    // Get the div with id of of userRepos
+    // Get the div with id of projects-body
     let projects = document.getElementById("projects-body");
 
-    // Create variable that will create li's to be added to ul
+    // Create variable that will create li's to be added to projects-body
     let div = document.createElement("div");
     div.style.cssText =
       "max-width: 537px; position: relative; overflow: hidden;";
@@ -92,9 +93,7 @@ function requestUserRepos(url) {
     `;
 
     // Append each div to the project
-
     projects.appendChild(div);
-    // }
   };
 
   // Send the request to the server

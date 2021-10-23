@@ -1,0 +1,50 @@
+#head {
+    /* border: 2px solid red; */
+    /* transform: rotate(-5deg); */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: animahead 0.9s ease-in-out 0s infinite alternate forwards;
+    transform-origin: center;
+}
+
+@keyframes animahead {
+    from {
+        transform: rotate(-3deg);
+    }
+
+    to {
+        transform: rotate(3deg);
+    }
+}
+
+#lefthand {
+    animation: animalefthand 0.5s ease-in-out 0s infinite alternate forwards;
+    transform-origin: center;
+}
+
+@keyframes animalefthand {
+    from {
+        transform: rotate(-2deg);
+    }
+
+    to {
+        transform: rotate3d(20, 0, 1, 1deg);
+        /* transform: rotate3d(0, 10, 40, 1deg); */
+        /* transform: rotateX(13deg) rotateY(0deg) rotateZ(0deg); */
+    }
+}
+
+#righthand {
+    animation: animarighthand 0.5s ease-in-out 0s infinite alternate forwards;
+    transform-origin: center;
+}
+
+@keyframes animarighthand {
+    from {
+        transform: rotate(-0deg);
+    }
+
+    to {
+        transform: rotate3d(0, 10, 40, 1deg);
+        /* transform: rotateY(7deg); */
+    }
+}
