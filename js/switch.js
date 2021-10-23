@@ -1,3 +1,4 @@
+let root = document.querySelector(":root");
 var darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
 var darkmode = Boolean(darkThemeMq.matches);
 
@@ -9,12 +10,14 @@ changeMode.onclick = () => {
     document.body.style.cssText = "background: #fafafa;color: #111;";
     changeMode.classList.replace("bx-toggle-right", "bx-toggle-left");
     changeMode.style.color = "rgb(0, 225, 225)";
+    root.style.setProperty("--txtcolor", "#000");
     darkmode = false;
   } else {
     // document.body.style.cssText = "background: #050320;color: #fff;";
     document.body.style.cssText = "background: #050320;color: #eee;";
     changeMode.classList.replace("bx-toggle-left", "bx-toggle-right");
     changeMode.style.color = "rgba(252, 70, 107, 1)";
+    root.style.setProperty("--txtcolor", "#fff");
     darkmode = true;
   }
 };
@@ -24,11 +27,13 @@ if (darkmode) {
   document.body.style.cssText = "background: #050320;color: #eee;";
   changeMode.classList.replace("bx-toggle-left", "bx-toggle-right");
   changeMode.style.color = "rgba(252, 70, 107, 1)";
+  root.style.setProperty("--txtcolor", "#fff");
   // darkmode = true;
 } else {
   document.body.style.cssText = "background: #fafafa;color: #111;";
   changeMode.classList.replace("bx-toggle-right", "bx-toggle-left");
   changeMode.style.color = "rgb(0, 225, 225)";
+  root.style.setProperty("--txtcolor", "#000");
   // darkmode = false;
 }
 

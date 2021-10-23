@@ -1,7 +1,22 @@
 html {
   scroll-behavior: smooth;
 }
+:root
+{
+  --txtcolor: #000;
+  /* --txtcolor: #fff; */
+}
+#Frontend {
+  fill: var(--txtcolor);
+}
 
+#Backend {
+  fill: var(--txtcolor);
+}
+
+#Programming {
+  fill: var(--txtcolor);
+}
 /* @media (prefers-color-scheme: light) {
   body {
     background: #fff;
