@@ -8,7 +8,7 @@ oReq.open("GET", "colors.json");
 oReq.onload = () => {
   // parse the JSON data into an object
   colorCode = JSON.parse(oReq.response);
-  requestUserRepos("AssignmentMaker");
+  requestUserRepos("assignment-maker");
   requestUserRepos("fancy-border-radius-generator");
   requestUserRepos("ColorPicker");
   requestUserRepos("SnakeGame");
